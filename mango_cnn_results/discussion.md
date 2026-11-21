@@ -1,4 +1,4 @@
-## 12. Discussion and conclusion
+## Discussion and conclusion
 
 ### 1. Overfitting in Round 1
 The basic CNN has **8,483,397 parameters** (almost all in its first fully-connected layer) but only 2,100 training images with no variation. Its training accuracy reached **99.6%**, while validation accuracy stayed around 87.6% over the last 5 epochs (best 90.22% at epoch 16). Validation loss was lowest at epoch 7 (0.352) and then **rose to 0.546** by the last epoch, while training loss fell to 0.016. The final train-validation gap is **10.7 percentage points**. This is clear overfitting: the model memorized the training images instead of learning general disease patterns.
