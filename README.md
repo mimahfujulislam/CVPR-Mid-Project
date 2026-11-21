@@ -82,7 +82,7 @@ The final model reached its best validation accuracy (95.11%) at epoch 42, with 
    - per-class accuracy
    - ROC curves (one-vs-rest)
    - sample predictions and misclassified images
-7. Discussion, limitations and conclusion
+  
 
 ## How to run
 
