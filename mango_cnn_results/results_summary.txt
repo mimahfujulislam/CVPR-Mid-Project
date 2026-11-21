@@ -1,0 +1,28 @@
+
+RESULTS SUMMARY: MLD-BD mango leaf disease classification (5 classes, 3000 images)
+Split: 2100 train / 450 validation / 450 test (stratified 70/15/15)
+
+Round 1, CNN_Basic (3 conv blocks, no augmentation/BN/dropout):
+  test accuracy 88.22%, macro F1 0.8812;
+  final train-val accuracy gap 10.7 percentage points.
+Round 2, CNN_Improved (4 conv blocks + BatchNorm + dropout + augmentation):
+  test accuracy 95.56%, macro F1 0.9553;
+  final train-val accuracy gap 0.2 percentage points.
+Change in test accuracy: +7.34 percentage points.
+
+Final model per-class accuracy: best = Die_Back (100.0%),
+worst = Gall_Mid (86.7%).
+Most frequent confusion: Gall_Mid predicted as Die_Back (6 images).
+
+
+                  precision    recall  f1-score   support
+
+     Anthracnose     0.8980    0.9778    0.9362        90
+Bacterial_Canker     0.9775    0.9667    0.9721        90
+        Die_Back     0.9375    1.0000    0.9677        90
+        Gall_Mid     0.9750    0.8667    0.9176        90
+         healthy     1.0000    0.9667    0.9831        90
+
+        accuracy                         0.9556       450
+       macro avg     0.9576    0.9556    0.9553       450
+    weighted avg     0.9576    0.9556    0.9553       450
